@@ -5,7 +5,7 @@ from src.db import DB
 
 
 DiningBot(
-    token=config('TOKEN'), 
+    token=config('TOKEN'),
     admin_ids=seprate_admins(config('ADMIN_ID')),
     log_level=config('LOG_LEVEL', default='INFO'),
     db=DB(
